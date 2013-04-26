@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name          = 'locked_process'
   s.version       = LockedProcess::VERSION
   s.date          = '2013-04-26'
-  s.summary       = "Thread process with that can run once it is unique"
+  s.summary       = "Thread process with that can run only if it is unique"
   s.description   = "Trhead process that only executes if no other thread with the same lock file is running"
   s.authors       = ["Marcelo Jacobus"]
   s.email         = 'marcelo.jacobus@gmail.com'
