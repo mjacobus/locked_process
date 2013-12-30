@@ -1,0 +1,17 @@
+language: ruby
+rvm:
+  - 2.0.0
+  - 1.9.3
+env:
+  - DB=sqlite
+script:
+  - TRAVIS=true bundle exec rspec spec/
+gemfile:
+  - Gemfile
+notifications:
+  email:
+    on_failure: change
+branches:
+  only:
+    - master
+

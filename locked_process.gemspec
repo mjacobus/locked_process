@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.description   = "Trhead process that only executes if no other thread with the same lock file is running"
   s.authors       = ["Marcelo Jacobus"]
   s.email         = 'marcelo.jacobus@gmail.com'
+  s.license       = 'MIT'
 
   s.files         = [
     "README.md",
@@ -23,7 +24,8 @@ Gem::Specification.new do |s|
   s.homepage      = "https://github.com/mjacobus/locked_process"
 
   s.add_development_dependency "rspec"
-  s.add_development_dependency 'simplecov'
+  s.add_development_dependency "simplecov"
+  s.add_development_dependency "converall"
   s.add_development_dependency "guard-rspec"
   s.add_development_dependency 'rb-inotify'
 end
